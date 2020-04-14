@@ -58,11 +58,7 @@ class VoteWidget extends StatelessWidget {
                           fontSize: 22,
                         )
                       ),
-                      color: Provider.of<VoteState>(context, listen: false).
-                        selectedOptionInActiveVote ==
-                         option 
-                          ? Colors.green 
-                          : Colors.white,
+                      color: Provider.of<VoteState>(context).selectedOptionInActiveVote == option ? Colors.green : Colors.white,
                     ),
                   ),
                 ],

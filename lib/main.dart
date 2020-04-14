@@ -43,7 +43,7 @@ class VoteApp extends StatelessWidget {
                 icon: Icon(Icons.home),
                 color: Colors.white, 
                 onPressed: (){
-                  print('Result Screen');
+                 Navigator.pushReplacementNamed(context, '/home');
                 }
                 ),
             ),
