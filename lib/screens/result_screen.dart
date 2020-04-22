@@ -18,7 +18,16 @@ class ResultScreen extends StatelessWidget {
       animate: true,
     );
   }
-  List<charts.Series<VoteData, String>>  retrieveVoteResult(){};
+  List<charts.Series<VoteData, String>>  retrieveVoteResult(BuildContext context){
+    Vote activeVote = Provider.of<VoteState>(context, listen: false).activeVote;
+
+    List<VoteData> data = List<VoteData>();
+    for(var option in activeVote.options){
+      option.forEach((key, value) {
+        data.add(VoteData(key, value));
+      });
+    }
+  }
 }
 
 class VoteData {
