@@ -27,6 +27,20 @@ class ResultScreen extends StatelessWidget {
         data.add(VoteData(key, value));
       });
     }
+    return[
+      charts.Series<VoteData, String>(
+        id: 'VoteResult',
+        colorFn: (_, pos){
+          if(pos % 2 == 0){
+            return charts.MaterialPalette.green.shadeDefault;
+          }
+           return charts.MaterialPalette.blue.shadeDefault;
+        },
+        domainFn: (VoteData vote, _) => vote.option,
+        measureFn: (VoteData vote, _) => vote.total,
+        data:data,
+      )
+    ];
   }
 }
 
