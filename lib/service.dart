@@ -24,7 +24,7 @@ List<Vote> getVoteList(){
       voteTitle: 'Election municipalle',
       options: [
         {'Nodem': 70},
-        {'Sandjom': 35},
+        {'Sandjom': 95},
         {'Gwegou': 67},
         {'Caleb': 80},
       

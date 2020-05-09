@@ -19,8 +19,8 @@ class _HomeScreenState extends State<HomeScreen> {
   
   // loading votes
   Future.microtask(() {
-    Provider.of<VoteState>(context, listen: false).clearState();
-    Provider.of<VoteState>(context, listen: false).loadVoteList();
+    Provider.of<VoteState>(context, ).clearState();
+    Provider.of<VoteState>(context, ).loadVoteList();
   }
     
       );
