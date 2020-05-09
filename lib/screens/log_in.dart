@@ -17,7 +17,23 @@ class LogIn extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height:MediaQuery.of(context).size.height,
         color: Colors.blue,
-        
+        child: Center(
+          child: Container(
+            width: 400,
+            height: 400,
+            child: Column(
+              children: <Widget>[
+                TextField(
+                  style: TextStyle(
+                    fontSize:20.0,
+                    color:Colors.white,
+                  ),
+                )
+              ],
+            ),
+          )
+          ,),
+
       ),
     );
   }

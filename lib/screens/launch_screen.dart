@@ -35,7 +35,7 @@ class LaunchScreen extends StatelessWidget {
 
           LoginButton(
         label: 'anonymous sign in',
-        onPressed: () => signIn(context),
+        onPressed: () => logIn(context),
         ),
       ],
       ),
@@ -45,4 +45,7 @@ class LaunchScreen extends StatelessWidget {
   void signIn (BuildContext context){
     Navigator.pushReplacementNamed(context, '/home');
   }
+     void logIn (BuildContext context){
+     Navigator.pushReplacementNamed(context, '/logIn');
+   }
 }

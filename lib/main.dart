@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:vote/constants.dart';
+import 'package:vote/screens/log_in.dart';
 import 'screens/home_screen.dart';
 import 'screens/launch_screen.dart';
 import 'screens/result_screen.dart';
@@ -16,7 +17,7 @@ class VoteApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
- //============  44:44  ===========
+ //============  44:44  =================
           create: (context) =>  VoteState(),
           
 //========================================
@@ -35,6 +36,12 @@ class VoteApp extends StatelessWidget {
               title: Text(kAppName)
             ), 
             body: HomeScreen(),
+          ),
+            '/logIn': (context) => Scaffold(
+            appBar: AppBar(
+              title: Text(kAppName)
+            ), 
+            body: LogIn(),
           ),
           '/result': (context) => Scaffold(
              appBar: AppBar(
