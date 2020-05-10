@@ -13,10 +13,24 @@ class LogIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+          appBar: new AppBar(
+       elevation: 0.0,
+       backgroundColor: Colors.blueGrey,
+       title: Text('HomeApp'),
+       actions: <Widget>[
+       /*  new IconButton(icon: Icon(Icons.search, color: Colors.white,), onPressed: (){
+           Navigator.push(context, MaterialPageRoute(
+                     builder: (context)=>new LoginPage()));
+         }),
+         new IconButton(icon: Icon(Icons.shopping_cart, color: Colors.white,), onPressed: (){},),*/ 
+          ],
+          ),
+      resizeToAvoidBottomPadding: false,
       body: Container(
         width: MediaQuery.of(context).size.width,
         height:MediaQuery.of(context).size.height,
         color: Colors.blue,
+        
         child: Center(
           child: Container(
             width: 400,
