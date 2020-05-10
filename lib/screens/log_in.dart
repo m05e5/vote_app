@@ -30,7 +30,9 @@ class LogIn extends StatelessWidget {
                     elevation: 5.0,
                     borderRadius: BorderRadius.all(Radius.circular(10.0)), 
                     color: Colors.deepOrange,
-                    child: TextField(
+                    child: Row(
+                      children: <Widget>[
+                        TextField(
                       decoration: InputDecoration(
                         fillColor:Colors.white,
                          filled: true,
@@ -40,6 +42,8 @@ class LogIn extends StatelessWidget {
                         color:Colors.black,
                       ),
                     ),
+                      ],
+                    )
                   ),
                 )
               ],
