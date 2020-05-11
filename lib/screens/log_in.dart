@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vote/UI/CustomeInputField.dart';
 import 'package:vote/screens/home_screen.dart';
 
 void main(){
@@ -20,50 +21,29 @@ class LogIn extends StatelessWidget {
         child: Center(
           child: Container(
             width: 400,
-            height: 400,
+            height: 300,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Container(
-                  width: 250,
-                  child: Material(
-                    elevation: 5.0,
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)), 
-                    color: Colors.deepOrange,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Icon(Icons.person, color: Colors.white,),
-                        ),
-                        Container(
-                        
-                          decoration: BoxDecoration(
-                              color: Colors.white, 
-                            borderRadius:BorderRadius.only(topRight: Radius.circular(10.0), bottomRight: Radius.circular(10.0) ,),
+                Image.asset('image/logo.png', width: 100, height: 100,),
+               CustomeInputField(
+                 Icon(Icons.person, color: Colors.white,), 'UserName'), 
+               CustomeInputField(
+                 Icon(Icons.lock, color: Colors.white,), 'Password'),
+                 Container(
+                   width: 150,
+                   
+                    child: RaisedButton(
+                      onPressed:(){}, 
+                      color: Colors.deepOrange,
+                      textColor:Colors.white,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                      child: Text('LogIn', style: TextStyle(
+                        fontSize:20.0,
 
-                          ),
-                          width: 210,
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: TextField(
-                      decoration: InputDecoration(
-                        border:InputBorder.none,
-                            fillColor:Colors.white,
-                             filled: true,
-                      ),
-                      style: TextStyle(
-                            fontSize:20.0,
-                            color:Colors.black,
-                      ),
-                    ),
-                          ),
-                        ),
-                      ],
+                      ) )
                     )
-                  ),
-                )
+                  )
               ],
             ),
           )

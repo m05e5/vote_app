@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 class CustomeInputField extends StatelessWidget {
+
+  Icon fieldIcon;
+  String hintText;
+ 
+CustomeInputField(this.fieldIcon, this.hintText);
+
   @override
   Widget build(BuildContext context) {
     return  Container(
@@ -13,7 +19,7 @@ class CustomeInputField extends StatelessWidget {
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Icon(Icons.person, color: Colors.white,),
+                          child:fieldIcon,
                         ),
                         Container(
                         
@@ -23,11 +29,13 @@ class CustomeInputField extends StatelessWidget {
 
                           ),
                           width: 210,
+                          height: 50,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: TextField(
-                      decoration: InputDecoration(
-                        border:InputBorder.none,
+                              decoration: InputDecoration(
+                              border:InputBorder.none,
+                              hintText:hintText,
                             fillColor:Colors.white,
                              filled: true,
                       ),
