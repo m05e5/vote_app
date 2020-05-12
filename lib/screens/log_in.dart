@@ -20,12 +20,19 @@ class LogIn extends StatelessWidget {
         color: Colors.blue,
         child: Center(
           child: Container(
+           
             width: 400,
-            height: 300,
+            height: 350,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Image.asset('image/logo.png', width: 100, height: 100,),
+                Material(
+                  elevation: 10.0,
+                  borderRadius: BorderRadius.all(Radius.circular(50.0)) ,
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Image.asset('image/logo.png', width: 70, height: 70,),
+                  )),
                CustomeInputField(
                  Icon(Icons.person, color: Colors.white,), 'UserName'), 
                CustomeInputField(
