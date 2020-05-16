@@ -136,8 +136,22 @@ class _HomeState extends State<Home> {
          ],
        ),
      ),
-     
-      
+
+     body: new ListView(children: <Widget>[
+
+         image_carousel,
+
+
+         
+         new Padding(padding: const EdgeInsets.all(20.0),
+         child: new Text('Recent products'),),
+      //  grid view
+      Container(
+  height:320.0,
+  //      child: Products(),
+      ), ],),
+
+
       
     );
   }
