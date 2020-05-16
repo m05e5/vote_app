@@ -1,5 +1,6 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
+import 'package:vote/components/services.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -41,7 +42,7 @@ class _HomeState extends State<Home> {
       appBar: new AppBar(
        elevation: 0.0,
        backgroundColor: Colors.red,
-       title: Text('FashApp'),
+       title: Text('HouseCorp'),
        actions: <Widget>[
          new IconButton(icon: Icon(Icons.search, color: Colors.white,), onPressed: (){
            //    Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart()));
@@ -148,7 +149,7 @@ class _HomeState extends State<Home> {
       //  grid view
       Container(
   height:320.0,
-  //      child: Products(),
+      child: Services(),
       ), ],),
 
 
