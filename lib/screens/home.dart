@@ -36,6 +36,8 @@ class _HomeState extends State<Home> {
   );
 
     return Scaffold(
+
+
       appBar: new AppBar(
        elevation: 0.0,
        backgroundColor: Colors.red,
@@ -47,6 +49,95 @@ class _HomeState extends State<Home> {
           })
        ],
      ),
+
+
+     drawer:new Drawer(
+       child: new ListView(
+         children: <Widget>[
+//          header
+            new UserAccountsDrawerHeader(
+              accountName: Text('CalebMoses'),
+              accountEmail: Text('calebmoses1111@gmail.com'),
+              currentAccountPicture: GestureDetector(
+                child: new CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  child: Icon(Icons.person, color: Colors.white,),
+                  ) ,
+                ),
+                decoration: new BoxDecoration(
+                  color:  Colors.red
+                ),  
+              ),
+//              body
+              InkWell(
+                onTap: (){},
+                              child: ListTile(
+                  title: Text('Home Page'),
+                  leading: Icon(Icons.home, color: Colors.red,),
+                ),
+              ),
+
+               InkWell(
+                onTap: (){},
+                              child: ListTile(
+                  title: Text('My Account'),
+                  leading: Icon(Icons.person, color: Colors.red,),
+                ),
+              ),
+
+               InkWell(
+                onTap: (){},
+                              child: ListTile(
+                  title: Text('My orders'),
+                  leading: Icon(Icons.shopping_basket, color: Colors.red,),
+                ),
+              ),
+
+
+               InkWell(
+                onTap: (){ 
+                //   Navigator.push(context, MaterialPageRoute(
+                  //   builder: (context)=>new Cart()));
+                     },
+                              child: ListTile(
+                  title: Text('Shopping cart'),
+                  leading: Icon(Icons.shopping_cart, color: Colors.red,),
+                ),
+              ),
+
+
+               InkWell(
+                onTap: (){},
+                              child: ListTile(
+                  title: Text('Favorite'),
+                  leading: Icon(Icons.favorite, color: Colors.red,),
+                ),
+              ),
+
+          Divider(),
+
+           InkWell(
+                onTap: (){},
+                              child: ListTile(
+                  title: Text('Settings'),
+                  leading: Icon(Icons.settings, color: Colors.grey,),
+                ),
+              ),
+
+            InkWell(
+                onTap: (){},
+                              child: ListTile(
+                  title: Text('About'),
+                  leading: Icon(Icons.help, color: Colors.grey,),
+                ),
+              ),
+       
+       
+         ],
+       ),
+     ),
+     
+      
       
     );
   }
