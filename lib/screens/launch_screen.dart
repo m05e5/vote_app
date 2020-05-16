@@ -43,7 +43,7 @@ class LaunchScreen extends StatelessWidget {
   }
 
   void signIn (BuildContext context){
-    Navigator.pushReplacementNamed(context, '/home');
+    Navigator.pushReplacementNamed(context, '/hoo');
   }
      void logIn (BuildContext context){
      Navigator.pushReplacementNamed(context, '/logIn');

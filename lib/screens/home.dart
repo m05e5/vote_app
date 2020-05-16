@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Home',
+   
     home: Home(),
   ),);
 }
@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
      Widget image_carousel = new Container(
-    height: 200.0,
+    height: 170.0,
     child: new Carousel(
       boxFit: BoxFit.cover,
       images: [
@@ -43,10 +43,10 @@ class _HomeState extends State<Home> {
        backgroundColor: Colors.red,
        title: Text('FashApp'),
        actions: <Widget>[
-         new IconButton(icon: Icon(Icons.search, color: Colors.white,), onPressed: (){}),
-          new IconButton(icon: Icon(Icons.shopping_cart, color: Colors.white,), onPressed: (){
-        //    Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart()));
-          })
+         new IconButton(icon: Icon(Icons.search, color: Colors.white,), onPressed: (){
+           //    Navigator.push(context, MaterialPageRoute(builder: (context)=>new Cart()));
+         }),
+         
        ],
      ),
 

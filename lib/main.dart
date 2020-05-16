@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:vote/constants.dart';
+import 'package:vote/screens/home.dart';
 import 'package:vote/screens/log_in.dart';
 import 'screens/home_screen.dart';
 import 'screens/launch_screen.dart';
@@ -42,6 +43,9 @@ class VoteApp extends StatelessWidget {
               title: Text(kAppName)
             ), 
             body: LogIn(),
+          ),
+            '/hoo': (context) => Scaffold(
+            body: Home(),
           ),
           '/result': (context) => Scaffold(
              appBar: AppBar(
