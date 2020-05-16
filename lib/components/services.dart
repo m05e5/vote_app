@@ -9,32 +9,32 @@ class _ServicesState extends State<Services> {
   var service_list = [
     {
       "name": "Massonerie",
-      "picture":  "images/s1.JPG",
+      "picture":  "images/massonerie.JPG",
      
     },
     {
       "name": "plomberie",
-      "picture":  "images/c10.JPG",
+      "picture":  "images/plomberie.JPG",
   
     },
     {
       "name": "peinture",
-      "picture":  "images/c5.JPG",
+      "picture":  "images/peinture.JPG",
       
     },
     {
       "name": "architechture",
-      "picture":  "image/house.png",
+      "picture":  "image/architechture.JPG",
      
     },
      {
       "name": "electricité",
-      "picture":  "image/logo.jpg",
+      "picture":  "image/electricite.jpg",
      
     },
      {
       "name": "rangement",
-      "picture":  "image/logo.png",
+      "picture":  "image/rangement.jpg",
      
     },
   ];

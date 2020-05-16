@@ -22,11 +22,12 @@ class _HomeState extends State<Home> {
     child: new Carousel(
       boxFit: BoxFit.cover,
       images: [
-        AssetImage('image/house.png'),
-        AssetImage('image/logo.png'),
-        AssetImage('image/logo.jpg'),
-        AssetImage('image/house.png'),
-        AssetImage('image/logo.png'),
+        AssetImage('image/plomberie.jpg'),
+        AssetImage('image/massonerie.jpg'),
+        AssetImage('image/architecture.jpg'),
+        AssetImage('image/electricite.jpg'),
+        AssetImage('image/rangement.jpg'),
+        AssetImage('image/peinture.jpg'),
       ], 
       autoplay: true,
       animationCurve: Curves.fastOutSlowIn,
